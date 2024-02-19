@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>Entendiendo las funciones</h1>
+    <h2>The getElementById() Method</h2>
+
+    <p id="prueba1"> esto es un parrrafo</p>
+    <p id="prueba2"> esto es otro parrrafo</p>
+
+
+    <script>
+        function cambio(){
+        document.getElementById("prueba1").innerHTML = "hola";
+        document.getElementById("prueba2").innerHTML = "que tal";
+        }
+    </script>
+
+    <button onclick="cambio()">Cambiamos los textos</button>
+
+
+
+</body>
+
+</html>

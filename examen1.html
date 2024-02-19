@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        background-image: url("logo.png");
+        background-repeat: no-repeat;
+        background-size: 80px 60px;
+        background-position: 700px;
+
+    }
+
+    .menu {
+        padding: 30px;
+        display: inline;
+        float: right;
+
+    }
+
+    .menutext {
+        text-decoration: none;
+        color: black;
+
+    }
+
+    .menu:hover {
+        background-color: aqua;
+    }
+
+
+
+    .logo {
+        height: 60px;
+        width: 60px;
+    }
+
+    .part1 {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .derecha {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .izquierda {
+        width: 50%;
+        display: flex;
+    }
+
+    .part2 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .imgpart2 {
+        padding: 20px;
+        width: 300px;
+        height: 400px;
+    }
+
+    footer {
+        background-color: crimson;
+        padding: 40px;
+    }
+
+    .form-data {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    form {
+        border: 1px solid black;
+        border-radius: 2.5%;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+</style>
+
+<script>
+    function color_azul() {
+        // Obtenemos el elemento body
+        var body = document.body;
+
+        // Cambiamos el color de fondo a azul
+        body.style.backgroundColor = "blue";
+    }
+</script>
+
+<body>
+
+    <button onclick="color_azul()">Cambiar Color de Fondo a Azul</button>
+    <nav>
+        <div class="menu"><a class="menutext" href="https://www.twitch.tv/">Accueil</a></div>
+        <div class="menu"><a class="menutext" href="https://www.twitch.tv/">Gamme</a></div>
+        <div class="menu"><a class="menutext" href="https://www.twitch.tv/">Catalogue</a></div>
+        <div class="menu"><a class="menutext" href="https://www.twitch.tv/">Contact</a></div>
+    </nav>
+
+
+
+    <div class="part1">
+        <div class="izquierda">
+            <h1>Distributeur officiel LLumar en Suisse</h1>
+        </div>
+        <div class="derecha">
+            <h1>Parte 2</h1>
+            <h4>Les films pour vitrage LLumar® améliorent la performance des vitrages existants à un prix nettement
+                moins élevé que le remplacement par un nouveau système de vitrage. Ils s‘installent facilement et
+                efficacement sur les vitrages existants de tout type de bâtiments et véhicules.</h4>
+        </div>
+    </div>
+
+    <div class="part2">
+        <img class="imgpart2" src="imagen1.jpg" alt="foto">
+        <img class="imgpart2" src="imagen1.jpg" alt="foto">
+        <img class="imgpart2" src="imagen1.jpg" alt="foto">
+        <img class="imgpart2" src="imagen1.jpg" alt="foto">
+    </div>
+
+
+    <div class="form-data">
+        <form>
+            Escribe aqui:
+            <input type="text" value="Hola" name="hola"><br><br>
+            Numero:
+            <input type="number" value="numero" name="numero"><br><br>
+            Opciones:
+            <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select><br>
+            Checkbox:
+            <input type="checkbox" value="1" name="1">valor1
+            <input type="checkbox" value="2" name="2">valor2<br><br>
+            Radio:
+            <input type="radio" value="1" name="1">valor1
+            <input type="radio" value="2" name="1">valor2
+            <input type="radio" value="3" name="1">valor3
+
+        </form>
+    </div>
+
+    <footer>
+        <h1>
+            LIVRAISON DANS TOUTE LA SUISSE
+            Commandez et recevez vos films LLumar® dans les plus brefs délais</h1>
+    </footer>
+
+
+</body>
+
+
+</html>
